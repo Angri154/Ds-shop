@@ -1,6 +1,11 @@
 @import '../../scss/main.scss';
 
 .nav_list {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+
   color: #ffffff;
   background-color: #282828;
   ul {
@@ -9,6 +14,7 @@
     li {
       display: flex;
       justify-content: center;
+      align-items: center;
       min-width: 255px;
       padding: 19px 0px;
     }
@@ -22,4 +28,17 @@
 .img {
   max-width: 16px;
   max-height: 16px;
+  margin-right: 10px;
+  &__arrow {
+    max-width: 8px;
+    max-height: 4px;
+    margin-left: 14px;
+  }
+  &__list {
+    margin-right: 18px;
+  }
+}
+.list_orange {
+  background-color: #f4cf87;
+  color: #282828;
 }

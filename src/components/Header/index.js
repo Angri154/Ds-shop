@@ -10,14 +10,18 @@ const Header = () => {
       <nav className={style.nav_list}>
         <ul>
           <div className={style.nav_list__left}>
-            <li>
-              <img src={List} alt="list" />
+            <li className={style.list_orange}>
+              <img src={List} alt="list" className={style.img__list} />
               Каталог товара
             </li>
-            <li>Общая информация</li>
+            <li>
+              Общая информация
+              <img src={Arrow} alt="Arrow" className={style.img__arrow} />
+            </li>
             <li>
               <img src={Phone} className={style.img} alt="Phone" />
-              +3809999999
+              095 357 178
+              <img src={Arrow} alt="Arrow" className={style.img__arrow} />
             </li>
           </div>
           <li>
