@@ -1,0 +1,25 @@
+@import '../../scss/main.scss';
+
+.nav_list {
+  color: #ffffff;
+  background-color: #282828;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    li {
+      display: flex;
+      justify-content: center;
+      min-width: 255px;
+      padding: 19px 0px;
+    }
+  }
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    min-width: 664px;
+  }
+}
+.img {
+  max-width: 16px;
+  max-height: 16px;
+}
