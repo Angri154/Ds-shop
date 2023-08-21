@@ -13,7 +13,7 @@ export default function SimpleSlider() {
     slidesToScroll: 1,
   };
   return (
-    <Slider {...settings}>
+    <Slider className={style.Slider} {...settings}>
       <div>
         <img className={style.slider__foto} src={photoSlider__1} />
       </div>
