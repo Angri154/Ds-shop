@@ -1,28 +1,32 @@
 @import '../../scss/main.scss';
 
 .nav_list {
+  display: flex;
+  justify-content: center;
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 22px;
-
+  line-height: 27px;
+  min-width: 1680px;
   color: #ffffff;
   background-color: #282828;
   ul {
+    min-width: 1680px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     li {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-width: 255px;
-      padding: 19px 0px;
+      min-width: 329px;
     }
   }
   &__left {
     display: flex;
     justify-content: space-between;
     min-width: 664px;
+    min-width: none;
+    padding: 0 !important;
   }
 }
 .img {
@@ -35,10 +39,91 @@
     margin-left: 14px;
   }
   &__list {
+    width: 34px;
+    height: 24px;
     margin-right: 18px;
   }
 }
-.list_orange {
+li {
+  .list_orange {
+    min-width: 398px;
+    padding: 19px 0px;
+    padding-left: 20px;
+    background-color: #f4cf87;
+    color: #282828;
+    width: 378px;
+    display: flex;
+    justify-content: left !important;
+    padding-left: 20px;
+  }
+}
+
+.menu {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  ul {
+    max-width: 1680px;
+    min-width: 1680px;
+    display: flex;
+    align-items: center;
+  }
+}
+.icon {
+  margin-right: 168px;
+}
+.menu__input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 21px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 430px;
+  border: 1px solid #dcdcdc;
+  color: #dcdcdc;
+  height: 67px;
+}
+.menu__button {
+  width: 174px;
+  height: 67px;
+  font-weight: 700;
+  line-height: 27px;
   background-color: #f4cf87;
+  border-radius: 0px 5px 5px 0px;
+}
+.menu__search {
+  max-height: 67px;
+  margin-right: 130px;
+  display: flex;
+}
+.switch {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0px;
+  width: 61px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  appearance: none;
+  overflow: hidden;
+  background: url('../../assets/img/strelka.png') no-repeat right;
+  background-position-x: calc(100% - 8px);
+  margin-right: 50px;
+  padding-left: 5px;
+}
+.switch_ed {
   color: #282828;
+}
+.menu__icon {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.li__text__left {
+  justify-content: right !important;
 }
