@@ -4,3 +4,11 @@
   margin-top: 55px;
   max-width: 1920px;
 }
+.button {
+  &__left {
+    position: relative;
+  }
+  &__right {
+    position: absolute;
+  }
+}
