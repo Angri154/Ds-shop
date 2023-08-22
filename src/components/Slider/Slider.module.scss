@@ -3,10 +3,11 @@
 .Slider {
   margin-top: 55px;
   max-width: 1920px;
+  position: relative;
 }
 .button {
   &__left {
-    position: relative;
+    position: absolute;
   }
   &__right {
     position: absolute;
