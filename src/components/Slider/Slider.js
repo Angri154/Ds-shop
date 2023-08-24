@@ -14,26 +14,28 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: (
-      <div class={style.button__left}>
-        <img src={button__left} />
+      <div class={style.slick_prev}>
+        <img src={button__left} alt="button" />
       </div>
     ),
     nextArrow: (
-      <div class={style.button__right}>
-        <img src={button__right} />
+      <div class={style.slick_next}>
+        <img src={button__right} alt="button" />
       </div>
     ),
   };
   return (
-    <Slider className={style.Slider} {...settings}>
+    <Slider className={style.slider} {...settings}>
       <div>
-        <img className={style.slider__foto} src={photoSlider__1} />
+        <img className={style.slider__foto} alt="slider-foto" src={photoSlider__1} />
       </div>
       <div>
-        <img className={style.slider__foto} src={photoSlider__2} />
+        {/* <div className={style.left__text}></div> */}
+        <img className={style.slider__foto} alt="slider-foto" src={photoSlider__2} />
       </div>
       <div>
-        <img className={style.slider__foto} src={photoSlider__3} />
+        {/* <div className={style.left__text}></div> */}
+        <img className={style.slider__foto} alt="slider-foto" src={photoSlider__3} />
       </div>
     </Slider>
   );

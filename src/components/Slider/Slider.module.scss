@@ -1,9 +1,7 @@
 .slider__foto {
 }
-.Slider {
+.slider {
   margin-top: 55px;
-  max-width: 1920px;
-  position: relative;
 }
 .button {
   &__left {
@@ -12,4 +10,24 @@
   &__right {
     position: absolute;
   }
+}
+.slider {
+  position: relative;
+}
+.slick_prev,
+.slick_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 67px;
+  height: 81px;
+}
+
+.slick_prev {
+  left: -20px; /* розташування лівої стрілки */
+}
+
+.slick_next {
+  right: -20px; /* розташування правої стрілки */
 }
